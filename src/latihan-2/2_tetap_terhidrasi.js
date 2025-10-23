@@ -11,11 +11,11 @@
 
 // npx vitest run test/latihan-2/2_tetap_terhidrasi
 function litres(time) {
-    // Tulis kode disini
-    //
     // karena 1 jam = 0,5 liter
     // maka: liter = jam * 0,5
     // karena dibulatkan kebawah, maka gunkan fungsi Math.floor(liter)
+
+    return Math.floor(time * 0.5)
 }
 
 export default litres

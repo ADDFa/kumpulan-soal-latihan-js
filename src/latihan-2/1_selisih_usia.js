@@ -8,7 +8,18 @@
 
 // npx vitest run test/latihan-2/1_selisih_usia
 function diffInAges(ages) {
-    // Tulis kode disini
+    let usia_termuda = ages[0]
+    let usia_tertua = ages[0]
+
+    for (let i = 0; i <= ages.length; i++) {
+        const usia_sekarang = ages[i]
+
+        if (usia_sekarang < usia_termuda) usia_termuda = usia_sekarang
+        if (usia_sekarang > usia_tertua) usia_tertua = usia_sekarang
+    }
+
+    const selisih_usia = usia_tertua - usia_termuda
+    return [usia_termuda, usia_tertua, selisih_usia]
 }
 
 export default diffInAges
